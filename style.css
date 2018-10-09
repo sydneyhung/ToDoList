@@ -213,9 +213,9 @@ ul li.completed::before {
 .taskDate {
     font-size: 11px;
     font-style: italic;
-    padding: 10px 9%;
+    padding: 10px;
     position: absolute;
-    right: 12%;
+    right: 18%;
     top: 3px;
 }
 
