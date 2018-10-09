@@ -143,7 +143,10 @@ function submitForm(in1="", in2="", in3="") {
             // finsih building task
             task.appendChild(taskLabel);
             task.appendChild(taskInfo);
-            document.getElementById("theList").appendChild(task);
+            // document.getElementById("theList").appendChild(task);
+            var theList = document.getElementById("theList");   
+            theList.insertBefore(task, theList.childNodes[0]);
+
             $('#' + target).collapse();
             closeForm();
         }
@@ -151,10 +154,10 @@ function submitForm(in1="", in2="", in3="") {
 }
 
 // populate the list by calling submitForm()
-submitForm("Finish Homework 2", "10/10/2018", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis enim quam in tempore libero fugit nulla tenetur eveniet. Atque vel doloribus iste aut voluptates repellendus dolorum sint illo iure fugit!");
-submitForm("Work on Bake-off 2", "10/18/2018", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus perferendis unde iure hic rem labore ex repellat, dolor molestiae quam harum. Voluptatibus, assumenda minus mollitia beatae aliquam eligendi cupiditate nesciunt.");
-submitForm("Cook dinner", "10/9/2018", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae non, nostrum beatae hic quod dolorem veniam magnam numquam facere mollitia labore fuga nobis consectetur sit harum quia dolor, odit animi!");
-submitForm("Visit family", "10/20/2018", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos laborum mollitia nulla molestias quis esse non id sed sit facilis perspiciatis dicta earum saepe, repudiandae expedita adipisci perferendis. Consequatur, magnam.");
-submitForm("Buy apples", "10/10/2018", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quam sunt nihil ullam cumque ut deserunt quis in explicabo, molestias eos, illo magni fuga eligendi! Itaque rem culpa ad blanditiis?");
-submitForm("Go shopping", "10/13/2018", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos laborum mollitia nulla molestias quis esse non id sed sit facilis perspiciatis dicta earum saepe, repudiandae expedita adipisci perferendis. Consequatur, magnam.");
-submitForm("Watch a movie", "10/14/2018", "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quam sunt nihil ullam cumque ut deserunt quis in explicabo, molestias eos, illo magni fuga eligendi! Itaque rem culpa ad blanditiis?");
+submitForm("Buy groceries", "10/10/2018", "apple, milk, eggs...");
+submitForm("Someone's birthday", "10/10/2018", "buy gift");
+submitForm("Work on Homework 2", "10/12/2018", "Problems 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 3.1, and 3.2");
+submitForm("Learn jQuery", "10/9/2018", "for bake-off-1");
+submitForm("Learn HTML & CSS", "10/9/2018", "for bake-off-1");
+submitForm("Work on Bake-off 1", "10/9/2018", "To Do List project");
+submitForm("What is a checklist?", "10/8/2018", "A checklist is a type of job aid used to reduce failure by compensating for potential limits of human memory and attention. It helps to ensure consistency and completeness in carrying out a task. A basic example is the 'to do list'. A more advanced checklist would be a schedule, which lays out tasks to be done according to time of day or other factors. A primary task in checklist is documentation of the task and auditing against the documentation.");
