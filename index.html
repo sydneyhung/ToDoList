@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tasks ...</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="page-mask"></div>
+
+    <!-- Main container -->
+    <div id="main-container">
+
+        <!-- The Header -->
+        <div id="theHeader">
+            <span>My Tasks</span>
+        </div>
+
+        <!-- The BUTTON -->
+        <input id="addBtn" type="image" src="plus.png" onclick="openForm()">
+
+        <!-- The FORM -->
+        <div id="theForm">
+            <form id="form-container">
+                <label for="in1"><b>Task</b></label>
+                <input type="text" id="newName" name="in1" placeholder="New task ...">
+                <label for="in2"><b>Date</b></label>
+                <input type="text" id="newDate" name="in2" placeholder="Add date ...">
+                <label for="in3"><b>Description</b></label>
+                <textarea id="newDesc" name="in3" placeholder="Task detail ..."></textarea>
+                <button type="button" id="submitBtn" class="btn update" onclick="submitForm()">Submit</button>
+                <button type="button" id="cancelBtn" class="btn cancel" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+
+        <!-- The LIST -->
+        <ul id="theList"></ul>
+    </div>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
