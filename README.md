@@ -1,3 +1,3 @@
 # TodoList
 
-Github Pages: https://sydneyhung.github.io/TodoList/
+Github Pages: https://sydneyhung.github.io/ToDoList/
